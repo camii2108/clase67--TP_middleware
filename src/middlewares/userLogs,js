@@ -1,0 +1,9 @@
+const fs = require('fs');
+const path = require('path')
+
+module.exports = (req,res,next) => {
+    /* loque va ahacer es ir escribiendo todas las ruta que la persona esta accedeidnto en sitio  */
+    fs.appendFileSync(path.join(__dirname,'..','data','userLogs.txt'),/* loque quiero guardar */`El usuario ingrreso a ala ruta :${req.url} \n`)/* esta url me va adevolver todo lo que este el localhost/300/00/home */
+
+    next()
+}
