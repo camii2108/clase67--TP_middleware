@@ -4,30 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicia secion</title>
+    <title>Registrate</title>
+    <link rel="stylesheet" href="/css/app.css">
 </head>
 <body>
-    <h1>inicia sesion</h1>
+    <h1>Registrate</h1>
     <hr>
-    <nav>
+	<nav>
 		<ul>
 			<li><a href="/">HOME</a></li>
 			<li><a href="/products">PRODUCTOS</a></li>
-			<li><a href="/products/detail">DETALLE DEL PRODUCTO</a></li>
+			<li><a href="/products/detail">DETALLE DE PRODUCTO</a></li>
 			<li><a href="/users/register">REGISTRATE</a></li>
 			<li><a href="/users/login">INICIÁ SESIÓN</a></li>
 		</ul>
 	</nav>
-    <main>
-        <section>
-            <article>
-                <div class = "card">
-                    <div class="card-header">
-
-                    </div>
-                </div>
-            </article>
-        </section>
-    </main>
+	<main class="container">
+		<section class="row">
+			<form action="/admin" method="GET">
+				<div class="form__start">
+					<label for="admin" class="form-label">Administrador</label>
+					<input type="text" class="form-control" id="admin" placeholder="Igresá tu nombre" name="admin">
+				</div>
+				<div>
+					<button class="btn btn-primary">Ingresar</button>
+				</div>
+			</form>
+		</section>
+	</main>
 </body>
 </html>

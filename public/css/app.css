@@ -6,3 +6,17 @@ body {
   margin: 0;
   font-family: sans-serif;
 }
+
+.container {
+    padding: 20px;
+    box-shadow: 15px 15px 15px rgb(0 0 0 / 50%);
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    background-color: gainsboro;
+    outline: 1px solid plum;
+    border: none;
+    border-radius: 10px;
+    margin: 20px 20px;
+    box-sizing: content-box;
+}
